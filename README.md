@@ -1,6 +1,6 @@
 This Project will build a simple **Student Management System** web application using Spring Boot, Spring MVC, Thymeleaf, Spring Data JPA, and MySQL database.
 
-We will build a CRUD operation for the Student entity in our **Student Management System**** web application.
+We will build a CRUD operation for the Student entity in our **Student Management System** web application.
 
 
 
@@ -38,7 +38,9 @@ Selected below dependencies while creating spring boot project using spring init
   
 - MySQL Driver
   
-- Spring Boot DevtoolsCreate Spring Boot Project in Spring Tool Suite [STS]
+- Spring Boot Devtools
+  
+- Create Spring Boot Project in Spring Tool Suite [STS]
 
 Selected below dependencies while creating spring boot project using spring initializr:
 
@@ -68,9 +70,7 @@ Let's create the below packages in our Spring boot project:
  
 Note that we are using Spring Boot  and it requires minimum Java version 17 or later.
 
-
-
-<dependencies>
+   <dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -102,8 +102,7 @@ Note that we are using Spring Boot  and it requires minimum Java version 17 or l
 		</dependency>
 	</dependencies>
 
-
- 3. Create Student JPA Entity
+ **3. Create Student JPA Entity**
     
     
 Let's create a Student JPA entity under the entity package and add the following content to it:
@@ -113,15 +112,7 @@ It consists of a User class which consists of Entity's used to model our data ap
 For each of our data , constructors , getters and setters are created.
 
 
-import jakarta.annotation.Generated;
 
-import jakarta.persistence.Entity;
-
-import jakarta.persistence.GeneratedValue;
-
-import jakarta.persistence.GenerationType;
-
-import jakarta.persistence.Id;
 
 @Entity
 
@@ -207,15 +198,9 @@ public class Student {
  Let's create a StudentRepository interface under the repository package and add the following content:
 
 
-import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.sbproject.sms.entity.Student;
+![repository](![Screenshot (17)](https://github.com/KavyakGowd/Student_Management_System/assets/156078895/388eb9c1-3fbe-4d4b-a1db-5c3e5d38d9b8)
 
-
-
-public interface StudentRepository extends JpaRepository<Student, Long>{
-
-}
 
 **5. Configure MySQL Database**
 
@@ -225,19 +210,8 @@ Before configuring the MySQL database configuration in our Spring boot project, 
 
 Let's open the application.properties file and add following content to it:
 
- spring.datasource.url=jdbc:mysql://localhost:3306/sms?createDatabaseIfNotExist=true
 
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-spring.datasource.username=root
-
-spring.datasource.password=tiger
-
-spring.jpa.hibernate.ddl-auto=update
-
-spring.jpa.show-sql=true
-
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+![database](![Screenshot (18)](https://github.com/KavyakGowd/Student_Management_System/assets/156078895/2691233f-ec51-4fa9-84ce-ce89da662ffa)
 
 **6. Creating Service Layer**
 
