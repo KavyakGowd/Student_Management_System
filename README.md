@@ -672,4 +672,20 @@ Once the Spring boot application is up and running then use the below URL to acc
 
 
 
-![List Student] (![Uploading Screenshot (3).png…]())
+
+![List Student] (![Screenshot (3)](https://github.com/KavyakGowd/Student_Management_System/assets/156078895/23930833-a756-4cbb-8959-ad807646ed21)
+)
+
+
+**Add Student**
+
+
+
+![Add Student](![Screenshot (4)](https://github.com/KavyakGowd/Student_Management_System/assets/156078895/78feba73-18bd-4e91-8fd2-b1f18b9927cb)
+)
+
+**Update Student**
+
+
+![update student] (![Screenshot (5)](https://github.com/KavyakGowd/Student_Management_System/assets/156078895/c46ba50f-947f-45d5-af9e-4ff21fd9b13c)
+)
