@@ -54,7 +54,7 @@ Selected below dependencies while creating spring boot project using spring init
   
 - Spring Boot Devtools
 
-2. Create Spring Boot Project Structure
+**2. Create Spring Boot Project Structure**
    
 Let's create the below packages in our Spring boot project:
 
@@ -70,8 +70,8 @@ Let's create the below packages in our Spring boot project:
  
 Note that we are using Spring Boot  and it requires minimum Java version 17 or later.
 
-   <dependencies>
-		<dependency>
+       <dependencies>
+	      <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
@@ -237,6 +237,9 @@ public interface StudentService {
 	void deleteStudentById(Long id);
 }
 
+
+![service](![Screenshot (19)](https://github.com/KavyakGowd/Student_Management_System/assets/156078895/b516ac08-8db5-4efe-8855-1154a98e6f15)
+
 **StudentServiceImpl Class**
 
 Let's create a new package called impl inside the service package. 
@@ -246,6 +249,7 @@ It consists of UserService class which helps us to write the business functional
 @Service annotation is used to make the class as a service layer.
 
 @Service
+
 public class StudentServiceImpl implements StudentService{
 
 	private StudentRepository studentRepository;
@@ -295,6 +299,7 @@ It consists of UserController class which basically control the flow of data.
 
 
 @Controller
+
 public class StudentController {
 	
 	private StudentService studentService;
@@ -362,11 +367,9 @@ public class StudentController {
 
 **8. View Layer**
 
-resources/templates/students.html
+**resources/templates/students.html**
 
 Let's create a students.html file and add the following content to it:
-
-
 
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
@@ -440,7 +443,8 @@ Let's create a students.html file and add the following content to it:
 
 We have used th:each Thymeleaf attribute in our template to iterate the list of students:
 
-**resources/templates/create_student.html**
+
+***resources/templates/create_student.html***
 
 Let's create a create_student.html file and add the following content to it:
 
@@ -528,10 +532,10 @@ Let's create a create_student.html file and add the following content to it:
 </body>
 </html>
 
+
 **resources/templates/update_student.html**
 
 Let's create an update_student.html file and add the following content to it:
-
 
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
@@ -644,22 +648,14 @@ Once the Spring boot application is up and running then use the below URL to acc
 
 **List Students**
 
-
-
-
 ![List Student] (![Screenshot (3)](https://github.com/KavyakGowd/Student_Management_System/assets/156078895/23930833-a756-4cbb-8959-ad807646ed21)
 )
 
-
 **Add Student**
-
-
 
 ![Add Student](![Screenshot (4)](https://github.com/KavyakGowd/Student_Management_System/assets/156078895/78feba73-18bd-4e91-8fd2-b1f18b9927cb)
 )
 
 **Update Student**
-
-
 ![update student] (![Screenshot (5)](https://github.com/KavyakGowd/Student_Management_System/assets/156078895/c46ba50f-947f-45d5-af9e-4ff21fd9b13c)
 )
